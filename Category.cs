@@ -4,6 +4,8 @@
     public int Survivors { get; set; }
     public int Missing { get; set; }
 
+    public int AllPassanger => Survivors + Missing;
+
     public override string ToString() => 
         $"\tKategórianév:   {Name}\n" +
         $"\tTúlélők száma:  {Survivors} fő\n" +
